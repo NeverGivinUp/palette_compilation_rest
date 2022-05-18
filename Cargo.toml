@@ -1,0 +1,71 @@
+[workspace]
+
+[package]
+name = "palette_compilation_rest"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+palette = {git = "https://github.com/NeverGivinUp/palette.git", rev ="fbf86093de79bcb2318f2372d6243f9a28301cad"}
+#palette = "0.6.0"
+zoon = {git = "https://github.com/MoonZoon/MoonZoon"}
+
+[dependencies.web-sys]
+version = "0.3"
+features = [
+    "CharacterData",
+    "Comment",
+    "console",
+    "CssRule",
+    "CssRuleList",
+    "CssStyleDeclaration",
+    "CssStyleRule",
+    "CssStyleSheet",
+    "Document",
+    "DomTokenList",
+    "DomPoint",
+    "DomRect",
+    "Element",
+    "Event",
+    "EventTarget",
+    "FocusEvent",
+    "History",
+    "InputEvent",
+    "Headers",
+    "HtmlElement",
+    "HtmlHeadElement",
+    "HtmlInputElement",
+    "HtmlStyleElement",
+    "HtmlTextAreaElement",
+    "KeyboardEvent",
+    "Location",
+    "MouseEvent",
+    "Node",
+    "Performance",
+    "ProgressEvent",
+    "Request",
+    "RequestInit",
+    "RequestMode",
+    "Response",
+    "Screen",
+    "StyleSheet",
+    "SvgCircleElement",
+    "SvgElement",
+    "SvggElement",
+    "SvgGraphicsElement",
+    "SvgLineElement",
+    "SvgMatrix",
+    "SvgPathElement",
+    "SvgPoint",
+    "SvgRect",
+    "SvgRectElement",
+    "SvgsvgElement",
+    "SvgUseElement",
+    "SvgTextElement",
+    "Text",
+    "UiEvent",
+    "Window",
+    "HtmlCanvasElement", "CanvasRenderingContext2d", "TextMetrics"
+]
